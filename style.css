@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100%;
+}
+
+section
+{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,#000080,#E35333);
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.gameboard
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: black;
+    width: 600px;
+    height: 600px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.pos
+{
+    width: 193.333px;
+    height: 193.333px;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px)
+{
+    .gameboard
+    {
+        width: 92.307vw;
+        height: 92.307vw;
+        row-gap: 2%;
+        column-gap: 2%;
+    }
+
+    .pos
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
